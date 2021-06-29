@@ -1,0 +1,12 @@
+.xans-layout-footer { position:relative;}
+.xans-layout-footer .utilMenu { padding:55px 0 40px; *zoom:1; }
+.xans-layout-footer .utilMenu li { float:left; padding:0 10px 0 10px; background:url("//img.echosting.cafe24.com/skin/base/common/ico_bar2.gif") no-repeat 0 15px; }
+.xans-layout-footer .utilMenu li.home { padding-left:0; background:none; }
+.xans-layout-footer .utilMenu li a { color:#e2e2e2; }
+.xans-layout-footer .address {color:#757575; line-height:20px; }
+.xans-layout-footer .address span { padding:0 25px 0 0; }
+.xans-layout-footer .address span a { color:#757575; }
+.xans-layout-footer .copyright { font-size:11px; line-height:20px; padding-bottom:40px}
+.xans-layout-footer .pageTop { position:absolute; right:0; top:10px; }
+.xans-layout-footer .ft_right {position:absolute; right:0; top:0; text-align: right}
+.xans-layout-footer .call {padding:55px 0 2px; font-size:30px; font-weight:700; color:#e2e2e2 }

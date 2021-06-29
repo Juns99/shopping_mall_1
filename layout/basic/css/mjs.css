@@ -1,0 +1,105 @@
+@charset "UTF-8";
+
+@font-face {
+      src : url("/font/brandon-grotesque-light-58a8a4b38001d.otf");
+      font-family: "light"
+}
+body {font-family: "light"; min-width:unset}
+
+.EC-Layout-Basket-count{position:absolute; top:26px; left:20px; width:15px; height:15px; background:#000; border-radius:50%; line-height:15px; text-align:center; color:#fff; font-size:10px;}
+#header .utilBox {width:50%; justify-content:flex-end;}
+#header .utilMenu li:hover .d2:after {content:""; position:absolute; top:0; left:35px; width:30px; height:2px; background-color:#222; z-index: 11111}
+#header .utilMenu .d2 li {padding:0; margin-bottom:5px}
+#header .utilMenu .my a {display:block; text-decoration: none; padding:6px 10px}
+
+#category .position .brand:hover .brand_ul {display:block}
+#category .position .brand_ul {display:none}
+#category .position .brand_ul {position:absolute; top:63px; left:-42px; width:158px; background:#fff;}
+#category .position .brand_ul:before {content: ""; position:absolute; top:0; left:33%; background-color:#222; display:inline-block; width:50px; height:2px; -webkit-transform: rotate(180deg); transform: rotate(180deg);}
+#category .position .brand_ul a{display:block; padding:12px 10px 13px; font-size:14px; color:#2e2e2e; text-decoration:none; text-align:center;}
+#category .position .brand_ul a:hover{color:#008bcc; background:#f8f8f8;}
+
+#searchBarForm {width:750px; margin:0 auto}
+.search_bar {display:none;position:fixed; z-index:1111; top:90px; left:0; right:0;
+   width:100%; height:100px; padding:50px 0 50px; background-color:rgba(255, 255, 255, 0.7); text-align:center;}
+.on {display: block}
+.searchClose {position:absolute; top:20px; right:200px;}
+.d3 {display:flex; border-bottom:2px solid #222; align-items:center}
+#keyword {width:calc(100% - 48px); height:68px; border:0; background-color:transparent; padding:4px 20px; height:60px; font-size:18px }
+
+.xans-layout-category .position > ul > li:nth-child(2) > a:hover, .xans-layout-category .position > ul > li:nth-child(2).selected > a, .xans-layout-category .position > ul > li:nth-child(2).on > a
+{color:#fd6060}
+
+
+
+.ec-base-product_3 {margin: 0}
+.cont_area {position:relative; width:100%}
+.ec-base-product .bg_gray {position:relative; background-color:#f7f7f7; padding-top:70px}
+.ec-base-product .width-50 {width:50%}
+.ec-base-product .eventUl_3 {margin:0; min-width:0; text-align:center; padding-top:50px}
+.ec-base-product .eventUl_3 li:nth-child(2),.ec-base-product .eventUl_3 li:nth-child(4) {margin-right:0}
+.ec-base-product ul.eventUl_3 > li {width:23%; height:320px; margin:0 50px}
+.ec-base-product ul.grid2 li .description {width:220px}
+iframe {position:absolute; bottom:70px; left:0; width:90%; height:40vh}
+.bg_gray_left {background-color:#f7f7f7; width:50%; height:730px; position:absolute; top:0; left:0; z-index:-1}
+.back_ {position:relative;}
+.more_bt {position:absolute; right:30px; top:0;}
+.more_bt a {text-decoration: none;  font-weight: bold; font-size:1rem;}
+.more_bt img {padding-left:5px; vertical-align: middle;}
+
+#dailyBanner .swiper-pagination {top:unset; bottom:0}
+#topSlide .swiper-pagination {top:unset; bottom:30px;}
+.area_left {display:inline-block; position:relative; width:55.6%; margin-right:3%; text-align:left; vertical-align:top; margin-bottom:100px}
+.area_left .title {position:absolute; top:0; left:0}
+.ec-base-product .swiper-wrapper {padding:200px 0 10px 0}
+.ec-base-product .swiper-wrapper .swiper-slide {width:220px !important; margin:0 25px 0 0}
+.ec-base-product .swiper-wrapper .description {margin:0}
+.area_left .pagination_mjs {width:100%; height:1px; margin-top:20px}
+.ec-base-product ul.swiper-wrapper li .thumbnail {width:220px}
+.ec-base-product ul.swiper-wrapper li .description {width:220px}
+.area_left .swiper-button-prev,
+.area_left .swiper-button-next {top:62.5%}
+.area_left .swiper-button-prev {left:-35px}
+.area_left .swiper-button-next {right:-35px}
+
+.area_right {position:relative; display:inline-block; width:41%; vertical-align:top; margin-top:110px}
+.area_right img.character {position:absolute; top:15px; left:-52px}
+.area_right img.daily-img {width:100%}
+
+.best_review {background-color:#e2e2e2; margin-top:100px}
+.best_review .review_area {padding:100px 0 100px 0}
+.best_review .right_review {width:37%; display:inline-block; vertical-align:top;}
+.best_review .right_review img {width:100%}
+.best_review .left_review {width:60%; display:inline-block; vertical-align:top}
+.best_review .left_review li {display:inline-block; width:33%}
+.best_review .left_review li.vertical_top {vertical-align:top}
+.best_review .left_review li img {width:100%}
+
+.swiper-pagination-bullet { width: 12px; height: 12px; background: transparent; border: 1px solid #008BCC; opacity: 1; }
+.swiper-pagination-bullet-active { width: 40px; transition:0.5s; border-radius:10px; background: #008BCC; border: 1px solid transparent; }
+
+.keyImg .thumbnail #zoomMouseGiude img {display:none}
+
+.list_product {display:unset; margin:0}
+.list_product .title {width:unset}
+.list_product .title h3 {font-size:30px}
+.ec-base-product ul.prdList_mjs > li {width:25%}
+.ec-base-product ul.list_pro > li {width:23%; margin:12px}
+.ec-base-product ul.list_pro li .thumbnail {width:unset}
+.ec-base-product ul.list_pro li .description {width:unset}
+
+#topLink {position:fixed; right:0; bottom:50px; width:70px; height:70px;
+  background-color:transparent; z-index:10000; font-weight:bold}
+#topLink:hover {}
+#topLink img {display:block; margin:0 auto; padding-bottom:5px}
+.scroll #topLink {right:50px;}
+
+.pageTop {display:none}
+.header_section {position:relative; width:100%; min-width:1200px; top:0; -webkit-transition: all 0.7s ease; -moz-transition: all 0.7s ease; -ms-transition: all 0.7s ease; -o-transition: all 0.7s ease;  transition: all 0.7s ease;}
+#comment_top.fixed { width:100%; position:fixed; top:-30px; left:0px; z-index:1001; background-color:#fff; border-bottom:1px solid #e2e2e2}
+#comment_top.fixed .xans-layout-logotop img {height:60px; transition:0.2s; position:fixed; left:48.5%}
+
+.swiper-button-next, .swiper-button-prev {color:#222}
+.swiper-pagination-bullet {border:1px solid #222}
+.swiper-pagination-bullet-active {color:#222; background:#222}
+.swiper-pagination-progressbar .swiper-pagination-progressbar-fill {background:#222}

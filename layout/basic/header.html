@@ -1,0 +1,107 @@
+
+<div id="header">
+<div class="header_section" id="comment_top">
+<div class="inner">
+  <div class="topArea">
+
+
+      <div id="category" module="Layout_category">
+          <!--@css(/css/module/layout/category.css)-->
+          <!--@js(/js/module/layout/category.js)-->
+          <div class="position">
+              <ul>
+                  <li><a href="/product/project.html?cate_no=51">기획전</a></li>
+                  <li><a href="/product/project2.html?cate_no=56">여름맞이</a></li>
+                  <li class="cate2 brand"><a href="/shopinfo/company.html">브랜드</a>
+                    <ul class="brand_ul">
+                      <li><a href="/shopinfo/company.html">브랜드 소개</a></li>
+                      <li><a href="">인재채용</a></li>
+                      <li><a href="">협력제안</a></li>
+                    </ul>
+                  </li>
+                  <li><a href="{$link_product_list}">{$name_or_img_tag}</a></li>
+                  <li><a href="/product/project.html?cate_no=50">이벤트</a></li>
+                  <li class="cate2"><a href="{$link_product_list}">{$name_or_img_tag}</a></li>
+              </ul>
+          </div>
+      </div>
+      <h1 module="Layout_LogoTop">
+          <!--@css(/css/module/layout/logotop.css)-->
+          <a href="/"><img src="/web/upload/img/logo.png"></a>
+      </h1>
+      <div class="utilBox">
+        <ul class="utilMenu right">
+          <li class="loginMenu"><!-- 로그인 -->
+            <a href="#"><img src="/web/upload/img/my.png" alt="나의정보"></a>
+            <div module="Layout_statelogoff" class="d2 my">
+                <a href="/member/login.html" class="log">로그인</a>
+                <a href="/myshop/index.html">마이쇼핑</a>
+            </div>
+
+            <div module="Layout_stateLogon" class="d2">
+              <ul>
+                <li>
+                  <a href="{$action_logout}" class="log">로그아웃</a>
+                </li>
+                <li>
+                  <a href="/myshop/index.html">마이쇼핑</a>
+                </li>
+            </div>
+          </li>
+          <li><!-- 검색 -->
+            <a href="#" class="searchBtn"><img src="/web/upload/img/search.png" alt="돋보기"</a>
+            <div class="search_bar">
+              <div module="Layout_SearchHeader">
+                  <!--
+                      $product_page=/product/detail.html
+                      $category_page=/product/list.html
+                  -->
+                  <fieldset class="d3">
+                      <legend>검색</legend>
+                      {$form.keyword}
+                      <input type="image" src="/web/upload/img/btn_search.png" alt="검색" onclick="{$action_search_submit}" />
+                      <ul class="autoDrop" id="{$search_auto_id}"></ul>
+                  </fieldset>
+                  <div class="searchCl">
+                    <a href="#" class="searchClose"><img src="/web/upload/img/search_close.png"</a>
+                  </div>
+              </div>
+            </div>
+          </li>
+          <li><!-- 관심상품 -->
+            <a module="Layout_statelogoff" href="/myshop/wish_list.html"><img src="/web/upload/img/like.png" alt="관심상품"><strong>{$interest_prd_cnt}</strong></a>
+            <a module="Layout_stateLogon" href="/myshop/wish_list.html"><img src="/web/upload/img/like.png" alt="관심상품"><strong>{$interest_prd_cnt}</strong></a>
+          </li>
+          <li><!-- 장바구니 -->
+            <a module="Layout_statelogoff" href="/order/basket.html"><img src="/web/upload/img/pack.png" alt="장바구니"><span class="count {$basket_count_display|display} {$basket_count_display_class}"><span class="{$basket_count_class}">{$basket_count}</span></span></a>
+            <a module="Layout_stateLogon" href="/order/basket.html"><img src="/web/upload/img/pack.png" alt="장바구니"><span class="count {$basket_count_display|display} {$basket_count_display_class}"><span class="{$basket_count_class}">{$basket_count}</span></span></a>
+          </li>
+        </ul>
+      </div>
+  </div>
+  <div module="board_listpackage_1" id="notice">
+      <h2 style="margin-left:7px"><span>공지사항</span></h2>
+      <div class="ec-base-table typeList gLine">
+          <ul border="1" summary="" module="board_list_1" id="rollingNotice">
+              <!--
+                  $count = 3
+                  $main_list = yes
+                  $subject_cut = 50
+                  $main_list_reply_view = no
+              -->
+              <li>
+                  <strong class="title"><span class="objHidden">제목</span><a href="{$link_board_detail}">{$subject}</a></strong>
+                  <span><span class="objHidden">날짜</span>{$write_date|date:y-m-d}</span>
+              </li>
+              <li>
+                  <strong class="title"><span class="objHidden">제목</span><a href="{$link_board_detail}">{$subject}</a></strong>
+                  <span><span class="objHidden">날짜</span>{$write_date|date:y-m-d}</span>
+              </li>
+          </ul>
+      </div>
+  </div>
+</div>
+</div>
+</div>
+<!-- 웹접근성준수, 스타일(css3)을 활용한 자유로운 레이아웃구사, 모듈활용으로 관리자컨텐츠 관리,
+ 80%이상의 컨텐츠를 관리자에서 관리가능하여 유지보수비 0을 목표로 하였다.-->
